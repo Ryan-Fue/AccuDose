@@ -5,3 +5,6 @@ streamlit
 gymnasium
 stable-baselines3
 torch
+fastapi
+uvicorn[standard]
+pydantic
