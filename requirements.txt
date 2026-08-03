@@ -8,3 +8,8 @@ torch
 fastapi
 uvicorn[standard]
 pydantic
+fastapi
+uvicorn
+numpy
+pydantic
+stable-baselines3
