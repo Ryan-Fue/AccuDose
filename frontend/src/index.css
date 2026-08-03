@@ -12,13 +12,13 @@
     --card-foreground: 215 25% 15%;
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
-    --primary: 206 100% 29%; /* CHOC Blue #005596 */
+    --primary: 206 100% 29%; /* Primary Blue #005596 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 201 60% 94%; /* CHOC Sky Light */
+    --secondary: 201 60% 94%; /* Sky Light */
     --secondary-foreground: 206 100% 29%;
     --muted: 210 20% 95%;
     --muted-foreground: 215 16% 47%;
-    --accent: 201 100% 39%; /* CHOC Bright #0082c8 */
+    --accent: 201 100% 39%; /* Bright Accent #0082c8 */
     --accent-foreground: 0 0% 100%;
     --border: 214 20% 90%;
     --radius: 0.625rem;
@@ -31,7 +31,7 @@
     --card-foreground: 210 20% 98%;
     --popover: 217 30% 13%;
     --popover-foreground: 210 20% 98%;
-    --primary: 201 100% 39%; /* CHOC Bright Accent */
+    --primary: 201 100% 39%; /* Bright Accent */
     --primary-foreground: 0 0% 100%;
     --secondary: 215 25% 18%;
     --secondary-foreground: 210 20% 98%;

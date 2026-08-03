@@ -8,14 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        choc: {
+        brand: {
           50: '#f0f7fc',
           100: '#e0eff9',
           200: '#b9def3',
           300: '#7cc2ea',
           400: '#36a3dd',
-          500: '#0082c8', // CHOC Bright Accent
-          600: '#005596', // CHOC Primary Blue (#005596)
+          500: '#0082c8', // Bright Blue Accent
+          600: '#005596', // Primary Blue Accent
           700: '#00467e',
           800: '#003c6a',
           900: '#063359',

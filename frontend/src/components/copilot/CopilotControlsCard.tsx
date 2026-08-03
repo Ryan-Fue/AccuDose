@@ -19,7 +19,7 @@ export const CopilotControlsCard: React.FC<CopilotControlsCardProps> = ({
     <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm space-y-5">
       
       <div className="flex items-center space-x-2 pb-3 border-b border-slate-100 dark:border-slate-800">
-        <div className="p-2 rounded-lg bg-choc-50 dark:bg-choc-950 text-choc-600 dark:text-choc-400">
+        <div className="p-2 rounded-lg bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400">
           <Sliders className="w-5 h-5" />
         </div>
         <div>
@@ -40,11 +40,11 @@ export const CopilotControlsCard: React.FC<CopilotControlsCardProps> = ({
               onClick={() => onChange({ ...settings, mode: "AI Recommendation (Human Approves)" })}
               className={`flex items-start space-x-3 p-3 rounded-xl border text-left transition-all ${
                 settings.mode === "AI Recommendation (Human Approves)"
-                  ? "bg-choc-50/60 dark:bg-choc-950/40 border-choc-500 text-choc-900 dark:text-choc-100 shadow-sm"
+                  ? "bg-brand-50/60 dark:bg-brand-950/40 border-brand-500 text-brand-900 dark:text-brand-100 shadow-sm"
                   : "bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300"
               }`}
             >
-              <Cpu className={`w-4 h-4 mt-0.5 ${settings.mode === "AI Recommendation (Human Approves)" ? "text-choc-600 dark:text-choc-400" : "text-slate-400"}`} />
+              <Cpu className={`w-4 h-4 mt-0.5 ${settings.mode === "AI Recommendation (Human Approves)" ? "text-brand-600 dark:text-brand-400" : "text-slate-400"}`} />
               <div>
                 <div className="font-semibold text-slate-900 dark:text-white">AI Copilot (Human Approves)</div>
                 <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
@@ -58,11 +58,11 @@ export const CopilotControlsCard: React.FC<CopilotControlsCardProps> = ({
               onClick={() => onChange({ ...settings, mode: "Full Manual" })}
               className={`flex items-start space-x-3 p-3 rounded-xl border text-left transition-all ${
                 settings.mode === "Full Manual"
-                  ? "bg-choc-50/60 dark:bg-choc-950/40 border-choc-500 text-choc-900 dark:text-choc-100 shadow-sm"
+                  ? "bg-brand-50/60 dark:bg-brand-950/40 border-brand-500 text-brand-900 dark:text-brand-100 shadow-sm"
                   : "bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:border-slate-300"
               }`}
             >
-              <UserCheck className={`w-4 h-4 mt-0.5 ${settings.mode === "Full Manual" ? "text-choc-600 dark:text-choc-400" : "text-slate-400"}`} />
+              <UserCheck className={`w-4 h-4 mt-0.5 ${settings.mode === "Full Manual" ? "text-brand-600 dark:text-brand-400" : "text-slate-400"}`} />
               <div>
                 <div className="font-semibold text-slate-900 dark:text-white">Full Manual Control</div>
                 <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
@@ -77,10 +77,10 @@ export const CopilotControlsCard: React.FC<CopilotControlsCardProps> = ({
         <div className="space-y-1.5 pt-1">
           <div className="flex justify-between font-medium text-slate-700 dark:text-slate-300">
             <span className="flex items-center space-x-1">
-              <ShieldAlert className="w-3.5 h-3.5 text-choc-500" />
+              <ShieldAlert className="w-3.5 h-3.5 text-brand-500" />
               <span>Minimum Auto-Suggest Confidence</span>
             </span>
-            <span className="font-semibold text-choc-600 dark:text-choc-400">
+            <span className="font-semibold text-brand-600 dark:text-brand-400">
               {(settings.confidenceFloor * 100).toFixed(0)}%
             </span>
           </div>
@@ -91,7 +91,7 @@ export const CopilotControlsCard: React.FC<CopilotControlsCardProps> = ({
             step={0.05}
             value={settings.confidenceFloor}
             onChange={(e) => onChange({ ...settings, confidenceFloor: Number(e.target.value) })}
-            className="w-full accent-choc-600 cursor-pointer h-1.5 bg-slate-200 dark:bg-slate-700 rounded-lg"
+            className="w-full accent-brand-600 cursor-pointer h-1.5 bg-slate-200 dark:bg-slate-700 rounded-lg"
           />
           <div className="flex justify-between text-[10px] text-slate-400">
             <span>0% (Permissive)</span>
@@ -106,7 +106,7 @@ export const CopilotControlsCard: React.FC<CopilotControlsCardProps> = ({
         type="button"
         disabled={isLoading}
         onClick={onRunSimulation}
-        className="w-full py-3 px-4 bg-choc-600 hover:bg-choc-700 active:bg-choc-800 text-white font-semibold text-xs rounded-xl shadow-md shadow-choc-600/20 transition-all flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full py-3 px-4 bg-brand-600 hover:bg-brand-700 active:bg-brand-800 text-white font-semibold text-xs rounded-xl shadow-md shadow-brand-600/20 transition-all flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isLoading ? (
           <>
