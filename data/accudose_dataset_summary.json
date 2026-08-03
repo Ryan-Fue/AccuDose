@@ -1,0 +1,26 @@
+{
+  "total_episodes": 1200,
+  "train_steps": 100295,
+  "test_steps": 19378,
+  "train_cohort_breakdown": {
+    "infant_febrile": 34311,
+    "neonate": 23828,
+    "renal_cyp_impaired": 22490,
+    "standard_pediatric": 19666
+  },
+  "train_policy_breakdown": {
+    "heuristic": 85574,
+    "exploratory_random": 8319,
+    "weight_proportional": 6402
+  },
+  "overall_time_in_therapeutic_range": 0.7937384715090483,
+  "toxicity_event_rate": 0.08668428136995862,
+  "age_range_days": [
+    1.0039162195955194,
+    3607.87038619304
+  ],
+  "weight_range_kg": [
+    1.2,
+    39.59788055286117
+  ]
+}
