@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    --primary: 206 100% 29%; /* Primary Blue #005596 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 201 60% 94%; /* Sky Light */
+    --secondary-foreground: 206 100% 29%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 201 100% 39%; /* Bright Accent #0082c8 */
+    --accent-foreground: 0 0% 100%;
+    --border: 214 20% 90%;
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    --background: 217 33% 9%;
+    --foreground: 210 20% 98%;
+    --card: 217 30% 13%;
+    --card-foreground: 210 20% 98%;
+    --popover: 217 30% 13%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 201 100% 39%; /* Bright Accent */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 16% 65%;
+    --accent: 206 100% 29%;
+    --accent-foreground: 0 0% 100%;
+    --border: 215 25% 20%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 85, 150, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 85, 150, 0.4);
+}
