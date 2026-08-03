@@ -1,0 +1,8 @@
+{
+  "dataset_train_samples": 100295,
+  "dataset_test_samples": 19378,
+  "offline_policy_final_test_mse": 1.6088964423351777,
+  "confidence_stats_fitted": true,
+  "ppo_timesteps_trained": 100000,
+  "status": "SUCCESS"
+}
