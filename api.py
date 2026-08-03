@@ -24,6 +24,37 @@ single global.
 
 import os
 from typing import List, Optional
+import numpy as np
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+
+app = FastAPI(title="AccuDose API", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Safely import custom modules
+try:
+    from digital_twin import PatientPhenotype
+    from env import PediatricDosingEnv
+    from ensemble_forecast import ensemble_forecast, ConfidenceEstimator
+    IMPORTS_OK = True
+except Exception as e:
+    print(f"IMPORT ERROR: {e}")
+    IMPORTS_OK = False
+
+@app.get("/health")
+def health():
+    return {"status": "ok", "imports_loaded": IMPORTS_OK}
+
+import os
+from typing import List, Optional
 
 import numpy as np
 from fastapi import FastAPI, HTTPException
